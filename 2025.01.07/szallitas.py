@@ -18,8 +18,8 @@ except FileNotFoundError:
 def sum(sumlist: list[int]) -> int:
     count = 0
     if sumlist.__len__() == 0: return 0
-    for elem in sumlist:
-        count += elem
+    for item in sumlist:
+        count += item
     return count
 
 print(f"2. feladat\nA tárgyak össztömege: {sum(items)} kg")
