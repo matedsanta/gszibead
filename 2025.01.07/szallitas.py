@@ -16,11 +16,11 @@ except FileNotFoundError:
     items: list[int] = [16, 8, 9, 4, 3, 2, 4, 7, 7, 12, 3, 5, 4, 3, 2]
 
 def sum(sumlist: list[int]) -> int:
-    cnt = 0
+    count = 0
     if sumlist.__len__() == 0: return 0
     for elem in sumlist:
-        cnt += elem
-    return cnt
+        count += elem
+    return count
 
 print(f"2. feladat\nA tárgyak össztömege: {sum(items)} kg")
 boxes: list[list[int]] = []
@@ -41,5 +41,3 @@ for db in boxes:
     print(sum(db), end=" ")
 print() # Sortörés
 print(f"A szükséges dobozok száma: {boxes.__len__()}")
-
-
