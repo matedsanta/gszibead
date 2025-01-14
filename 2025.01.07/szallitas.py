@@ -1,17 +1,14 @@
-def line_to_list(items_line):
-    items: list[int] = []
-    temp: str
-    for char in items_line:
-        if char not in [",", " "]:
-            temp += char
-        else:
-            items.append(int(temp))
-            temp = ""
-
 try:
     with open("tomeg.txt", "r") as file:
         items_line = file.readline()
-        line_to_list(items_line)
+        items: list[int] = []
+        temp: str
+        for char in items_line:
+            if char not in [",", " "]:
+                temp += char
+            else:
+                items.append(int(temp))
+                temp = ""
 except FileNotFoundError:
     items: list[int] = [16, 8, 9, 4, 3, 2, 4, 7, 7, 12, 3, 5, 4, 3, 2]
 
