@@ -31,6 +31,10 @@ words = [
     "Crossword",
     "Playground",
     "Starburst",
+    "Erekcionális diszfunkció",
+    "Etióp Esélyegyenlőségi Ombudsman",
+    "Csupasz",
+    "Billentyűzet"
 ]
 
 lives: int = 0
